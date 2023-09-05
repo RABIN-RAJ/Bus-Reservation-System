@@ -15,6 +15,23 @@
 </head>
 <body id="preview-body">
 <div id="navbarLogin"><jsp:include page="navbarAfterLogin.jsp"><jsp:param name="currentPage" value="home" /></jsp:include></div>
+<div class="loader-wrapper" id="spinner">
+<div class="truck-wrapper">
+  <div class="truck">
+    <div class="truck-container"></div>
+    <div class="glases"></div>
+    <div class="bonet"></div>
+
+    <div class="base"></div>
+
+    <div class="base-aux"></div>
+    <div class="wheel-back"></div>
+    <div class="wheel-front"></div>
+
+    <div class="smoke"></div>
+  </div>
+</div>
+</div>
     <div class="preview-container">
         <h1>Ticket Preview</h1>
         <div class="container">
@@ -35,23 +52,7 @@
                 </div>
             </div>
         </div>     
-         <div class="loader-wrapper" id="spinner">
-<div class="truck-wrapper">
-  <div class="truck">
-    <div class="truck-container"></div>
-    <div class="glases"></div>
-    <div class="bonet"></div>
-
-    <div class="base"></div>
-
-    <div class="base-aux"></div>
-    <div class="wheel-back"></div>
-    <div class="wheel-front"></div>
-
-    <div class="smoke"></div>
-  </div>
-</div>
-</div>
+         
           
         <div class="passenger-details">
             <h2>Passenger Details:</h2>

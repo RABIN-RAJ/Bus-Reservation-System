@@ -109,9 +109,21 @@
 var today = new Date();
 var nextMonth = new Date();
 nextMonth.setMonth(nextMonth.getMonth() + 1);
+nextMonth.setDate(nextMonth.getDate() - 1);
 var datePicker = document.getElementById('datePicker');
 datePicker.min = today.toISOString().split('T')[0];
 datePicker.max = nextMonth.toISOString().split('T')[0];
+
+//var currentMaxValue = datePicker.max;
+
+//Convert the max value to a Date object
+//var maxDate = new Date(currentMaxValue);
+
+//Subtract one day from the maxDate
+//maxDate.setDate(maxDate.getDate() - 1);
+
+//Update the datePicker max attribute with the new maxDate value
+//datePicker.max = maxDate.toISOString().split('T')[0];
 </script>
 </body>
 </html>

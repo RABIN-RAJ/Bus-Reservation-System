@@ -139,8 +139,8 @@
     <h2 id="formTitle"> Add Passenger Details</h2>
     <form id="editForm">
         <div class="form-group">
-            <label for="editUserId">User ID:</label>
-            <input type="text" id="editUserId" name="userId" value=${userId} readonly>
+            
+            <input type="hidden" id="editUserId" name="userId" value=${userId} readonly>
         </div>
         <div class="form-group">
             <label for="editName">Name:</label>

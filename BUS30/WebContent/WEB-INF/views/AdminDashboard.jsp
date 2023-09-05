@@ -215,7 +215,7 @@
       <th>Total Fare</th>
       <th>Status</th>
       <th>No of Seats Booked</th>
-      <th>          </th>
+     
  </tr>
   </thead>
   <tbody>

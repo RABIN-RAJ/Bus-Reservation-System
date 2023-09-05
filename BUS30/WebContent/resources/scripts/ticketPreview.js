@@ -2,7 +2,7 @@ var ticketNum;
     var payment_id;
     //var userid=document.getElementById("uid");
     $(document).ready(function() {
-		document.getElementById('spinner').style.display = 'flex';
+		document.getElementById('spinner').style.display = 'none';
 
     	var userid=$("#uid").val().toString();
 
@@ -10,6 +10,7 @@ var ticketNum;
     	console.log(userid);
         $('form').submit(function(e) {
             e.preventDefault(); // Prevent form submission
+            document.getElementById('spinner').style.display = 'block';
             var form = $(this);
 
             $.ajax({
@@ -19,7 +20,6 @@ var ticketNum;
                 dataType: 'json',
                 success: function(response) {
                   // Handle the success response here
-				document.getElementById('spinner').style.display = 'flex';
                   console.log('Hello1 Arun');
                     console.log(response);
                     console.log('Hello Arun');                                       
